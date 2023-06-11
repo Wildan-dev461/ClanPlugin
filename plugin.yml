@@ -1,0 +1,51 @@
+name: Clan
+version: 1.0.0
+api: [5.0.0]
+author: Will
+main: Will\Clan
+
+commands:
+  createclan:
+    description: Create a clan
+    usage: /createclan <clanname>
+    permission: clans.create
+  invite:
+    description: Invite a player to your clan
+    usage: /invite <player>
+    permission: clans.invite
+  leaveclan:
+    description: Leave your current clan
+    usage: /leaveclan
+    permission: clans.leave
+  disbandclan:
+    description: Disband your clan
+    usage: /disbandclan
+    permission: clans.disband
+  listclans:
+    description: List all clans
+    usage: /listclans
+    permission: clans.list
+  claninfo:
+    description: See Your Clans Information
+    usage: /claninfo
+    permission: clans.info
+
+permissions:
+  clans.create:
+    description: Allows a player to create a clan
+    default: op
+  clans.invite:
+    description: Allows a player to invite others to their clan
+    default: op
+  clans.leave:
+    description: Allows a player to leave their current clan
+    default: op
+  clans.disband:
+    description: Allows a player to disband their clan
+    default: op
+  clans.list:
+    description: Allows a player to list all clans
+    default: true
+  clans.info:
+    description: Allows a player to see their clans info
+    default: op
